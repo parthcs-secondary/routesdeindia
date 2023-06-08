@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import "./Banner.css";
 import { useNavigate } from "react-router-dom";
-
+import searchIcon from  "../../assets/images/search-icon.svg";
 
 function Banner() {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ function Banner() {
       <div className="bannerMiddle">
         <form action="" method="get">
           <input type="search" name="Search" id="searchBar" />
-          <img src="../../assets/images/search-icon.svg" alt="" />
+          <img src={searchIcon} alt="" />
         </form>
       </div>
 
