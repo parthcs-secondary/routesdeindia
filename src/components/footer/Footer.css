@@ -30,7 +30,7 @@ span{
     gap:30px;
 }
 
-.footer__item{
+.footer__top__item{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -48,26 +48,26 @@ hr {
     justify-content: space-between;
 }
 
-.footer__left {
+.footer__bottom__left {
     width: max-content;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.footer__left > span{
+.footer__bottom__left > span{
     font-size: 13px; 
 }
 
 
-.footer__right {
+.footer__bottom__right {
     width: max-content;
     display: flex;
     align-items: center;
     gap: 30px;
 }  
 
-.footer__right .social {
+.footer__bottom__right .social {
     display: flex;
     gap: 20px;
 }
@@ -75,7 +75,7 @@ hr {
 /* // media queries for responsiveness */
 
 @media only screen and (max-width: 1000px) {
-    .footer__top {
+    .footer__top{
       flex-wrap: wrap;
     }
 }
