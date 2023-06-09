@@ -1,36 +1,67 @@
-.navContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    height: 60px;
-    padding-left: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
 }
 
-
-li, a{
-    text-decoration: none;
-    list-style: none;
-    color: #22383d;
+/* CSS for Main Holder of whole navigation bar  */
+.navHolder {
+  z-index: 999;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  place-items: center;
+  background-color: transparent;
+  height: 100px;
+  padding-left: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
-#logoImage{
-    width: 40px;
-    height: 40px;
-    /* object-fit: contain; */
+/* CSS for nav container holding major menu items logo  */
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  height: 60px;
+  width: 100%;
 }
 
-.logo{
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.menuList{
-    display: flex;
+#logoImage {
+  width: 40px;
+  height: 40px;
 }
 
-.menuList-list-item{
-    padding: 0px 16px;
+.logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* CSS for nav bottom/secondary container holding minor menu items  */
+.navContainerBottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  height: 40px;
+  width: 100%;
+}
+.menuList {
+  display: flex;
+}
+
+.menuList-list-item {
+  padding: 0px 16px;
 }
