@@ -1,5 +1,5 @@
 import Navbar from "../components/navbar/Navbar";
-// import Footer from "../components/footer/Footer";
+import Footer from "../components/footer/Footer";
 import Routers from "../routes/Routers";
 
 const Layout = () => {
@@ -9,7 +9,7 @@ const Layout = () => {
       <div>
         <Routers/>
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };
