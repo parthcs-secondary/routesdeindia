@@ -1,16 +1,19 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    
 }
 
 .bannerContainer{
+    font-family: 'Manrope', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 35% 55%;
     min-height: 100vh;
-    padding-top: 100px;
+    margin-top: 60px;
     color : black;
     background-image: url(../../assets/images/pexels-adrien-olichon-16032547.jpg);
 }
@@ -18,12 +21,14 @@
 /* Top banner CSS starts here  */
 
 .bannerTop{
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 form{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +38,7 @@ form{
 }
 
 .searchBox {
+    
     border: none;
     display: flex;
     justify-content: center;
@@ -62,7 +68,7 @@ form{
 .searchButton {
     border: none;
     color: black;
-    font-size: medium;
+    font-size: 0.9rem;
     font-weight: 400;
     border-bottom: solid 1px black;
     width: 300px;
@@ -76,8 +82,8 @@ form{
 }
 
 .searchInput {
+    font-size: 0.9rem;
     color: black;
-    font-size: medium;
     font-weight: 300;
     border:none;
     background: transparent;
@@ -100,8 +106,17 @@ form{
     .searchBox:hover > .searchInput {
     width: 150px;
     padding: 0 6px;
+    border: none;
+    border-bottom: solid 1px black;
+    }
+
+    .searchInput::placeholder{
+        font-size: 8px;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
 }
-}
+
 
 /* middle banner CSS starts here  */
 
