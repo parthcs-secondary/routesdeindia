@@ -1,15 +1,14 @@
 import Typewriter from "typewriter-effect";
 import "./Banner.css";
 import { useNavigate } from "react-router-dom";
-import searchIcon from "../../assets/images/search-icon.svg";
 import Quicklinks from "../quicklinks/Quicklinks";
 import { DiAtom } from "react-icons/di";
 import { MdOutlineAutoGraph } from "react-icons/md";
 import { GiHorizonRoad } from "react-icons/gi";
+import { MdOutlineManageSearch } from "react-icons/md";
 
 function Banner() {
-
-  // custom styling is saved in variable bgImage and applied later to container 
+  // custom styling is saved in variable bgImage and applied later to container
   const bgImage = {
     backgroundPosition: "center",
     backgroundSize: "cover",
@@ -24,26 +23,39 @@ function Banner() {
   return (
     // banner container
     <div className="bannerContainer" style={bgImage}>
-
-       {/* search bar container -> search bar might be re-implemented completely based on client preference */}
+      {/* search bar container -> search bar might be re-implemented completely based on client preference */}
       <div className="bannerTop">
         <form action="" method="get">
+
+
+
           <div className="searchBox">
+
             <input
               className="searchInput"
               type="text"
               name=""
               placeholder="Where would you like to go?"
             />
+            <div className="buttonHolder">
+            <button type="submit" className="searchButton_two" style={{backgroundColor: '#22383D', width: '4rem', borderRadius: '0.7rem', border: 'none'}}>
+              <MdOutlineManageSearch style={{ fontSize: "1.5rem", color: "white"}} />
+            </button>
+            </div>
+
+
             <button className="searchButton" href="#">
               Find a Travel Location
-              <img src={searchIcon} alt="" />
+              <MdOutlineManageSearch style={{ fontSize: "1.5rem" }} />
             </button>
+
+
+
           </div>
         </form>
       </div>
 
-    {/* Heading and typewriter-effect container  */}
+      {/* Heading and typewriter-effect container  */}
       <div className="bannerMiddle">
         <h1 className="bannerHeading" onClick={handleClick}>
           Explore Every Route
@@ -66,8 +78,7 @@ function Banner() {
 
       {/* banner bottom div having quick links  */}
       <div class="bannerBottom">
-
-       {/* two props are passed per component here */}
+        {/* two props are passed per component here */}
         <Quicklinks
           quickLinkIcon={<MdOutlineAutoGraph size="3em" />}
           quickLinkTitle="500+ Happy travellers"

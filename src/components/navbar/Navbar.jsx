@@ -36,7 +36,7 @@ function Navbar() {
       className="navHolder"
     >
       {/* navContainer holds logo and major menu -> to be changed based on client  */}
-      <nav className="navContainer" style={{ backgroundColor: colorChange ? "rgba(221,255,255,1)" : "#33545B" }} >
+      <nav className="navContainer" style={{ backgroundColor: "#22383D" }} >
         <div className="logo">
           <div className="logoPadDiv">
 
@@ -79,7 +79,7 @@ function Navbar() {
       {/* navContainerBottom holds the minor menu items -> can be changed in future  */}
       <nav
         className="navContainerBottom"
-        style={{ display: colorChange ? "flex" : "none", backgroundColor: colorChange ? "rgba(221,255,255,1)" : "#33545B" }}
+        style={{ display: colorChange ? "flex" : "none", backgroundColor: "#22383D" }}
       >
         <ul className="menuList">
           <li className="menuList-list-item">
