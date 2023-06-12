@@ -18,6 +18,7 @@ const CustomNextArrow = ({ onClick }) => (
 );
 
 const Slide = ({ heading, children ,flag}) => {
+
   const reviewCardSeettings = {
     dots: false,
     infinite: true,
@@ -69,15 +70,21 @@ const Slide = ({ heading, children ,flag}) => {
       },
     ],
   };
+
   let settings;
+  const background ={
+    backgroundImage: "linear-gradient(white , #A0F9A0)"
+  } 
   if(flag ==='card'){
-    settings = {...reviewCardSeettings}
+    settings = {...reviewCardSeettings} 
   }else{
     settings = {...tripCardSeettings}
+    background.backgroundImage = "white";
   }
+   
 
   return (
-    <div className="slide">
+    <div className="slide" style={background}>
       <h1>{heading}</h1>
       <div className="slide__container">
         <Slider {...settings}>{children}</Slider>

@@ -179,7 +179,7 @@ export const trips = [
   },
   {
     id: 8,
-    title:  "Himachal special with Dharamshala, Dalhousie , Amritsar",
+    title:  "Himachal special with Dharamshala",
     desc: "Color you dreams",
     img: "https://images.pexels.com/photos/15032623/pexels-photo-15032623.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },

@@ -15,6 +15,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
+      <hr />
         <div className="footer__top">
           {/* // footer items starts here */}
 
