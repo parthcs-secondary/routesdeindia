@@ -84,7 +84,7 @@ const Slide = ({ heading, children ,flag}) => {
    
 
   return (
-    <div className="slide" >
+    <div className="slide" style={background}>
       <h1>{heading}</h1>
       <div className="slide__container">
         <Slider {...settings}>{children}</Slider>

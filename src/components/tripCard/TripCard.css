@@ -5,17 +5,14 @@
     gap: 10px;
     flex-direction: column;
     border-bottom:1px solid darkgray;
+    border-left-color: darkgray;
     background-image: linear-gradient(white , #F5F7FA);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1); */
     color: green;
     border-radius: 25px;
     cursor: pointer;
     
 }
-.TripCard:hover{
-    transform: scale(1.1);
-}
-
 
 img {
     width: 100%;
