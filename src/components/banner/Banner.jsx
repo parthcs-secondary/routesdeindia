@@ -77,7 +77,7 @@ function Banner() {
       </div>
 
       {/* banner bottom div having quick links  */}
-      <div class="bannerBottom">
+      <div className="bannerBottom">
         {/* two props are passed per component here */}
         <Quicklinks
           quickLinkIcon={<MdOutlineAutoGraph size="3em" />}

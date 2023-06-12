@@ -1,0 +1,79 @@
+.ReviewCard {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 4px solid transparent;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.ReviewCard__rating{
+   height: 100px;
+   display: flex;
+   align-items: center;
+ }
+ .ReviewCard__rating div{
+   padding: 5px;
+ }
+ .ReviewCard__rating div > *{
+  margin-left: 5px;
+  color : gold ;
+ }
+ 
+.ReviewCard__quote{
+   height: 200px;
+   font-size: 14px;
+   padding:10px;
+   overflow-y: auto;
+ }
+ .ReviewCard__quote::-webkit-scrollbar{
+   display: none;
+ }
+.ReviewCard__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  height: 100px;
+}
+
+.ReviewCard__info >img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ReviewCard__info .texts{
+  font-size: 1em;
+}
+
+ @media only screen and (max-width: 1470px) {
+  .ReviewCard{
+    width:350px ;
+  }
+  .ReviewCard__quote{
+    font-size: 13px;
+    padding:10px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .ReviewCard{
+    width:300px ;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .ReviewCard{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+}
+

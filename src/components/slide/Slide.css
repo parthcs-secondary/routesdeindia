@@ -1,0 +1,52 @@
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+  gap: 20px;
+  background-size: 76.6% 400px;
+  background-image: linear-gradient(white , #A0F9A0);
+  background-repeat: no-repeat;
+  background-position: center center;
+} 
+
+.slide > h1{
+  color:  green;
+}
+.slide__container {
+  width: 87.5%;
+}
+
+.slide .slick-slide {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+
+.prev-arrow, .next-arrow{
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 40px !important; 
+  height: 40px !important; 
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: lightgreen !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  z-index: 1 !important;
+
+}
+
+.prev-arrow {
+  left: -20px !important; 
+}
+
+.next-arrow {
+  right: -20px !important; 
+}
+
+
+/* .carousel-item {} */

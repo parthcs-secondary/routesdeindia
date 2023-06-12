@@ -18,7 +18,7 @@ function Navbar() {
     } else {
       setColorchange(false);
     }
-    console.log("ddds");
+    // console.log("ddds");
   };
 
   // Hook: React -> useEffect -> used to call the event and remove the event
