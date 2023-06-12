@@ -42,7 +42,7 @@ function FooterItem({ heading, list }) {
     };
   }, [windowSize]);
 
-
+  // console.log(list);
   return (
     <IconContext.Provider value={{ className: "button", size: "1.5em" }}>
       <div className="footer__item ">
@@ -54,8 +54,8 @@ function FooterItem({ heading, list }) {
         </div>
         {flag && (
         <div className="footer__item__bottom ">
-          {list.map((item) => (
-            <span>{item}</span>
+          {list.map((item, index) => (
+            <span key={index}>{item}</span>
           ))}
         </div>
         )}

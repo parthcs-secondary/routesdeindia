@@ -7,7 +7,7 @@ import {
   BsLinkedin,
   BsYoutube,
 } from "react-icons/bs";
-import { data } from "./FooterData";
+import { footerData } from "../../assets/data/data";
 import FooterItem from "../footerItem/FooterItem";
 
 function Footer() {
@@ -18,8 +18,8 @@ function Footer() {
         <div className="footer__top">
           {/* // footer items starts here */}
 
-          {data.map((item) => (
-            <FooterItem heading={item.heading} list={item.items}/>
+          {footerData.map((card) => (
+            <FooterItem key={card.id} heading={card.heading} list={card.items}/>
           ))}
 
           {/* footer items ends here */}
