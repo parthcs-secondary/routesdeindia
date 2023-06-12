@@ -3,14 +3,17 @@
 .footer {
     display: flex;
     justify-content: center;
-    color: #fff;
-    background-color:#22383D;
+    /* color: #fff; */
+    color: black;
+    /* background-color:#22383D; */
+    background-color:white;
     padding : 50px 0;
 }
 
 h2{
     font-size: 16px;
-    color:#fff;
+    color:black;
+    /* color:white; */
     cursor: pointer;
 }
 
