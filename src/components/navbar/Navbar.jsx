@@ -32,17 +32,14 @@ function Navbar() {
 
   return (
     // navholder(Fixed) holds both navs inside
-    <div
-      className="navHolder"
-    >
+    <div className="navHolder">
       {/* navContainer holds logo and major menu -> to be changed based on client  */}
-      <nav className="navContainer" style={{ backgroundColor: "#22383D" }} >
+      <nav className="navContainer" style={{ backgroundColor: "#22383D" }}>
         <div className="logo">
           <div className="logoPadDiv">
-
-          <Link to="/">
-            <img src={logo} alt="logo" id="logoImage" />
-          </Link>
+            <Link to="/">
+              <img src={logo} alt="logo" id="logoImage" />
+            </Link>
           </div>
         </div>
         <div className="navMenu">
@@ -79,7 +76,10 @@ function Navbar() {
       {/* navContainerBottom holds the minor menu items -> can be changed in future  */}
       <nav
         className="navContainerBottom"
-        style={{ display: colorChange ? "flex" : "none", backgroundColor: "#22383D" }}
+        style={{
+          display: colorChange ? "flex" : "none",
+          backgroundColor: "#22383D",
+        }}
       >
         <ul className="menuList">
           <li className="menuList-list-item">

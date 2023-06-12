@@ -48,8 +48,8 @@ const Slide = ({ heading, children ,flag}) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 3,
     centerMode: false,
     autoplay: false,
     prevArrow: <CustomPrevArrow />, // Custom previous arrow component

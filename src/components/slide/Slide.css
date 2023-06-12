@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0px;
-  gap: 20px;
+  padding: 50px 0px;
+  gap: 30px;
   background-size: 76.6% 400px;
-  background-image: linear-gradient(white , #A0F9A0);
+  /* background-image: linear-gradient(white , #A0F9A0); */
   background-repeat: no-repeat;
   background-position: center center;
 } 
@@ -16,7 +16,11 @@
 }
 .slide__container {
   width: 87.5%;
+  /* background-color: lightgreen; */
+  padding: 10px ;
+  
 }
+
 
 .slide .slick-slide {
   display: flex !important;
@@ -49,4 +53,3 @@
 }
 
 
-/* .carousel-item {} */
