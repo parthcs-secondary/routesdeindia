@@ -5,14 +5,14 @@
   align-items: center;
   padding: 50px 0px;
   gap: 30px;
-  /* background-size: 76.6% 400px; */
+  background-size: 76.6% 500px;
   /* background-image: linear-gradient(white , #A0F9A0); */
   background-repeat: no-repeat;
   background-position: center center;
 } 
 
 .slide > h1{
-  color:  darkgreen;
+  color:darkgreen;
 }
 .slide__container {
   width: 87.5%;
