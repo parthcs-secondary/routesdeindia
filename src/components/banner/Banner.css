@@ -1,56 +1,86 @@
-.banner_image_container{
+.banner_image_container {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url(../../assets/images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
+  /* overflow: hidden; */
+  @media screen and (max-width: 800px) {
+    max-height: 100%;
+  }
 }
 
-.banner__container{
-  height: 100%;
+.banner__container {
+  height: 90%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 7rem;
+  justify-content: center;
   gap: 3rem;
   align-items: center;
   color: white;
   font-family: "PT Sans", sans-serif;
+
+  @media screen and (max-width: 800px) {
+    max-height: 100%;
+    gap: 1em;
+  }
+}
+.banner__container {
+  @media screen and (max-width: 480px) {
+    max-height: 100%;
+    gap: 2em;
+  }
 }
 
-.banner_company__name{
-  font-size: 6rem;
+.banner_company__name {
+  font-size: 6em;
+  @media screen and (max-width: 800px) {
+    font-size: 2em;
+  }
 }
 
-#banner__word__dream{
+#banner__word__dream {
   color: rgb(2, 210, 2);
 }
 
-.tag__line{
-  font-size: 4rem;
+.tag__line {
+  font-size: 4em;
+  text-align: center;
+  @media screen and (max-width: 800px) {
+    font-size: 2em;
+  }
 }
 
-.banner__quote{
-  font-size: 2rem;
-  width: 90%;
+.banner__quote {
+  font-size: 2em;
+  width: 50%;
   text-align: center;
+  @media screen and (max-width: 800px) {
+    font-size: 1em;
+  }
 }
 
 .find__your__trip__button {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 500;
   border: none;
   border-radius: 10px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.1em;
   background: rgb(22, 189, 22);
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   transition: all 110ms ease-in;
+  @media screen and (max-width: 800px) {
+    font-size: 0.7em;
+  }
 }
 
 .find__your__trip__button:hover {
   transform: scale(1.05);
   text-decoration: none;
 }
-
