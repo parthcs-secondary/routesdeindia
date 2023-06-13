@@ -7,10 +7,17 @@ a {
   color: black;
 }
 
+#navbar__india{
+  /* color: rgb(5, 187, 5); */
+  color: rgb(38, 187, 32);
+}
+
 .CompanyName {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
 }
+
+
 
 .navbar {
   display: flex;

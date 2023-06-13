@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <h1 className="CompanyName">RoutesDe'India</h1>
+        <h1 className="CompanyName">RoutesDe'<b id="navbar__india">India</b></h1>
         <div className="menu__list__container">
           <ul className="menu__list">
             <li>
