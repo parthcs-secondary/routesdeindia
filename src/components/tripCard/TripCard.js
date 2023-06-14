@@ -7,7 +7,7 @@ function TripCard( {card} ) {
   // console.log(trip);
   return (
     <div className="TripCard">
-      <img src={card?.img} alt="" />
+      <img className="photo" src={card?.img} alt="" />
       <div className="info">
           <div className="time">
            <BsClock/>

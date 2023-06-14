@@ -4,12 +4,12 @@ import Slide from "../../components/slide/Slide";
 import ReviewCard from "../../components/reviewCard/ReviewCard";
 import TripCard from "../../components/tripCard/TripCard";
 import { cards, trips } from "../../assets/data/data";
-import StatisticsFrame from "../../components/statisticsFrame/StatisticsFrame";
+import Banner01 from "../../components/banner01/Banner01";
 function Home() {
   return (
     <div className="Home">
       <Banner />
-      <StatisticsFrame/>
+      <Banner01/>
       {/* upcoming trips  */}
       <div className="tours">
         <Slide heading={"Upcoming Trips"} flag={"trip"}>

@@ -1,0 +1,110 @@
+.Banner01 {
+  font-family: "PT Sans";
+  height: max-content;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: repeat(4, 1fr);
+  padding-left: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-right: 3em;
+  /* background-color: rgb(248, 235, 219); */
+
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 4fr;
+    max-height: fit-content;
+    /* overflow-x: auto; */
+  }
+}
+
+.banner01_images::-webkit-scrollbar{
+    display: none;
+}
+
+
+.banner01_title {
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+
+  @media screen and (max-width: 1100px) {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    justify-content: center;
+  }
+}
+
+.banner01_title > span{
+    border-bottom-width: 0.1em;
+    border-bottom-style: solid;
+    border-color: rgb(37, 182, 239);
+}
+
+/* .banner01_title::before{
+    position: absolute;
+    bottom: 1em;
+    content: "";
+    height: 2px;
+    width: 109px;
+    background-color: rgb(37, 182, 239);
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+      }
+} */
+
+
+.banner01_stats {
+  font-size: 1.1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column: 1 / 2;
+  grid-row: 3/4;
+
+  @media screen and (max-width: 1100px) {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+    font-size: 0.9em;
+  }
+}
+
+.banner01_images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  grid-column: 2 / 3;
+  grid-row: 1 / 5;
+
+  @media screen and (max-width: 1100px) {
+    grid-column: 1 / 2;
+    grid-row: 3/4;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+}
+
+.stat{
+    @media screen and (max-width:1100px) {
+        text-align: center;
+    }
+}
+
+.actual_image {
+  border-radius: 1em;
+  flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.stat p:first-child {
+  color: green;
+}
+
+#Escape_word{
+    color: rgb(37, 182, 239);
+}
