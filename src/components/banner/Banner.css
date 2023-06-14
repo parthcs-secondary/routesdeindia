@@ -1,170 +1,86 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.bannerContainer {
-  font-family: "Manrope", sans-serif;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20% 35% 55%;
-  min-height: 100vh;
-  margin-top: 60px;
-  color: white;
-  background-image: url(../../assets/images/girl-banner.jpg);
-  background-color: rgba(0, 0, 0, 0.5);
+.banner_image_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
+  /* overflow: hidden; */
+  @media screen and (max-width: 800px) {
+    max-height: 100%;
+  }
 }
 
-/* Top banner CSS starts here  */
-
-.bannerTop {
+.banner__container {
+  height: 90%;
+  width: 90%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 3rem;
   align-items: center;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+
+  @media screen and (max-width: 800px) {
+    max-height: 100%;
+    gap: 1em;
+  }
+}
+.banner__container {
+  @media screen and (max-width: 480px) {
+    max-height: 100%;
+    gap: 2em;
+  }
 }
 
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  height: 100%;
-  width: 100%;
+.banner_company__name {
+  font-size: 6em;
+  @media screen and (max-width: 800px) {
+    font-size: 2em;
+  }
 }
-.searchBox {
-  z-index: 999;
-  /* border: none; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+#banner__word__dream {
+  color: rgb(2, 210, 2);
+}
+
+.tag__line {
+  font-size: 4em;
+  text-align: center;
+  @media screen and (max-width: 800px) {
+    font-size: 2em;
+  }
+}
+
+.banner__quote {
+  font-size: 2em;
   width: 50%;
-  height: 40px;
-  cursor: pointer;
+  text-align: center;
+  @media screen and (max-width: 800px) {
+    font-size: 1em;
+  }
 }
 
-.buttonHolder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  display: none;
-  background: rgba(230, 233, 236, 0.6);
-}
-.searchBox:hover > .searchInput {
-  width: 100%;
-  background: rgba(230, 233, 236, 0.6);
-  /* border: solid 2px white; */
-  border-top-left-radius: 0.4rem;
-  border-bottom-left-radius: 0.4rem;
-  border-right: none;
-}
-.searchButton:hover > .searchInput {
-  width: 100%;
-  background: rgba(230, 233, 236, 0.6);
-  /* border: solid 2px white; */
-  border-top-left-radius: 0.4rem;
-  border-bottom-left-radius: 0.4rem;
-  border-right: none;
-}
-.searchBox:hover > .buttonHolder {
-  display: inline-block;
-  height: 100%;
-  /* border: solid 2px white; */
-  border-top-right-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
-  border-left: none;
-}
-.searchButton:hover > .buttonHolder {
-  display: inline-block;
-  height: 100%;
-  /* border: solid 2px white; */
-  border-top-right-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
-  border-left: none;
-}
-
-.searchBox:hover > .searchInput::placeholder {
-  opacity: 1;
-}
-.searchBox:hover > .searchButton {
-  display: none;
-}
-.searchButton:hover > .searchButton {
-  display: none;
-}
-
-.searchButton {
-  border: none;
-  color: white;
-  font-size: 1rem;
-  font-weight: 400;
-  width: 300px;
-  height: 40px;
-  background-color: transparent;
-  display: grid;
-  grid-template-columns: 4fr 1.2fr;
-  grid-template-rows: 1fr;
-  place-items: center;
-  transition: 0.7s;
-}
-
-.searchInput {
-  font-size: 0.9rem;
-  color: white;
-  font-weight: 300;
-  border: none;
-  background: transparent;
-  outline: none;
-  float: left;
-  padding: 5px;
-  padding-left: 20px;
-  font-size: 16px;
-  transition: 0.4s;
-  height: 100%;
-  width: 0px;
-}
-
-.searchInput::placeholder {
-  color: black;
-  opacity: 0;
-}
-/* 
-@media screen and (max-width: 620px) {
-    .searchBox:hover > .searchInput {
-    width: 150px;
-    padding: 0 6px;
-    border: none;
-    border-bottom: solid 2px black;
-    }
-
-    .searchInput::placeholder{
-        font-size: 8px;
-        overflow-wrap: break-word;
-        text-align: center;
-    }
-} */
-
-/* middle banner CSS starts here  */
-
-.bannerMiddle {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  place-items: center;
-  padding-top: 60px;
-}
-
-.bannerHeading {
+.find__your__trip__button {
+  font-family: "Poppins";
   font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.1em;
+  background: rgb(22, 189, 22);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 110ms ease-in;
+  @media screen and (max-width: 800px) {
+    font-size: 0.7em;
+  }
 }
 
-/* bottom banner CSS starts here  */
-.bannerBottom {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.find__your__trip__button:hover {
+  transform: scale(1.05);
+  text-decoration: none;
 }

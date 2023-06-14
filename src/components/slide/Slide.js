@@ -73,7 +73,7 @@ const Slide = ({ heading, children ,flag}) => {
 
   let settings;
   const background ={
-    backgroundImage: "linear-gradient(white , #A0F9A0)"
+    backgroundImage: "linear-gradient(white , rgb(5,187,32))"
   } 
   if(flag ==='card'){
     settings = {...reviewCardSeettings} 
