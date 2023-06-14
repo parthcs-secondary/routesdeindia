@@ -13,19 +13,19 @@ function Banner01() {
       {/* banner stats  */}
       <div className="banner01_stats">
         <div className="stat stat01">
-          <p>25000+</p>
-          <p>Travel Destinations</p>
+          <p>3000+</p>
+          <p>Happy Travellers</p>
         </div>
         <div className="stat stat01">
-          <p>25000+</p>
-          <p>Travel Destinations</p>
+          <p>500+</p>
+          <p>5 Star Reviews</p>
         </div>
         <div className="stat stat01">
-          <p>25000+</p>
-          <p>Travel Destinations</p>
+          <p>300+</p>
+          <p>Itineraries</p>
         </div>
         <div className="stat stat01">
-          <p>25000+</p>
+          <p>50+</p>
           <p>Travel Destinations</p>
         </div>
       </div>
