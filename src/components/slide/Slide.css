@@ -20,10 +20,9 @@
   max-width: 400px;
   margin: 0 auto 40px;
 
-  @media screen and (max-width:600px) {
+  @media screen and (max-width: 600px) {
     font-size: 1.8em;
   }
- 
 }
 
 .heading::after {
@@ -38,16 +37,19 @@
   bottom: -10px;
 }
 
-.slide__cards{
+.slide__cards {
   display: flex;
-  justify-content: center;
   overflow-x: scroll;
   overflow-y: hidden;
   gap: 25px;
   padding: 5px 9.5px;
+  justify-content: center;
+
+  @media screen and (max-width: 426px) {
+    justify-content: flex-start;
+  }
 }
 
-.slide__cards::-webkit-scrollbar{
+.slide__cards::-webkit-scrollbar {
   display: none;
 }
-
