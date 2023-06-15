@@ -6,7 +6,7 @@ import "./Home.css";
 import TripCard from "../../components/tripCard/TripCard";
 import { cards, trips } from "../../assets/data/data";
 import Banner01 from "../../components/banner01/Banner01";
-
+import BannerDiscuss from "../../components/bannerDiscuss/BannerDiscuss";
 function Home() {
   return (
     <div className="Home">
@@ -34,6 +34,7 @@ function Home() {
           ))}
         </Slide>
       </div>
+      <BannerDiscuss/>
 
       {/* Review slider  */}
       <div className="Reviews">
@@ -45,6 +46,7 @@ function Home() {
           ))}
         </Slide>
       </div>
+
     </div>
   );
 }
