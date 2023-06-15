@@ -1,0 +1,202 @@
+.banner_discuss_wrap {
+  font-family: "PT Sans";
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.BannerDiscuss {
+  border-top: solid 0.5px gray;
+  border-bottom: solid 0.5px gray;
+  display: grid;
+  max-width: 100%;
+  width: fit-content;
+  margin: 2em;
+  height: 100%;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.image_div {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actual_talk_image {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 50%;
+  height: 80%;
+  aspect-ratio: 1/1;
+  width: auto;
+  /* border: solid blue; */
+}
+
+.talk_middle_section_holder {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 90%;
+  place-items: center;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    gap: 2em;
+  }
+}
+
+.talk_tagline {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+}
+
+.left_icons {
+  padding-left: 4em;
+  padding-right: 4em;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.left_icons > * {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.middle_left_image_div {
+  display: flex;
+  justify-content: flex-start;
+  /* padding-left: 2em; */
+}
+.right_icons {
+  padding-left: 4em;
+  padding-right: 4em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  height: max-content;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.right_icons > * {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.middle_right_image_div {
+  display: flex;
+  justify-content: flex-end;
+  /* padding-right: 2em; */
+}
+
+/* //Advanced buttons styling  */
+
+.talk_buttons_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+}
+/* CSS */
+.talk_button {
+  white-space: break-spaces;
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "PT Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+
+.talk_button:hover {
+  background: #ffffff;
+  color: #77df75;
+}
+
+.talk_button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.talk_button:focus {
+  outline: none;
+  border: 2px solid #ffffff;
+}
+
+.talk_button:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+.talk_button:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
+}
+
+.talk_button:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+.talk_button:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
+    rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
+}
+
+.talk_button:disabled {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
