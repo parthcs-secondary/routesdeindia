@@ -44,18 +44,18 @@ function FooterItem({ heading, list }) {
 
   // console.log(list);
   return (
-    <IconContext.Provider value={{ className: "button", size: "1.5em" }}>
+    <IconContext.Provider value={{size: "1.5em" }}>
       <div className="footer__item ">
         <div className="footer__item__top " onClick={handleClick}>
-          <h2 className="button__one">{heading} </h2>
+          <div className="footer__heading">{heading} </div>
           {windowSize <= 426 && 
-          <IoIosArrowDropdown />
+          <IoIosArrowDropdown className="arrow__button"/>
           }
         </div>
         {flag && (
         <div className="footer__item__bottom ">
           {list.map((item, index) => (
-            <span key={index}>{item}</span>
+            <span className="footer__list" key={index}>{item}</span>
           ))}
         </div>
         )}

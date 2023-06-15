@@ -2,22 +2,48 @@
   width: 222px;
   /* height: 434px; */
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
   flex-direction: column;
   border-radius: 15px;
   cursor: pointer;
   color: #3a3a3a;
   transition: all 0.1s ease;
+  font-family: 'Poppins' , 'sans-serif';
+  cursor: pointer;
 }
 
 .TripCard:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .TripCard__image {
   width: 100%;
-  height: 320px;
+  height: 301px;
+  position: relative;
 }
+
+.TripCard__image > .time{
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+  gap: 90px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.54;
+  display: flex;
+}
+
+.time > .date{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* .calender{
+  
+} 
+*/
 
 .TripCard__image .photo {
   width: 100%;
@@ -26,11 +52,21 @@
   border-radius: 15px;
 }
 
+.TripCard__info{
+  margin: 10px;
+}
+
 .title{
-    font-size: 1.1rem;
+    font-size: 1em;
     font-weight: 500;
     line-height: 1.56;
     max-height: calc(2 * 16px * 1.56);
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
+.title:hover{
+  color: rgb(38, 187, 32);;
 }
 
 .rating{
@@ -43,14 +79,36 @@
     color:#ffc527;
 }
 
-.price .price__top{
-    font-size: 14px;
-    text-decoration: line-through;
+
+.Tripcard__details .price{
+    /* font-size: 0.9vw; */
+    font-size: 11.5px;
+    font-weight: 400;
     padding:5px 0 ;
-    /* margin-bottom: 11px; */
+    display: flex;
+    align-items: center;
 }
 
-.price .price__bottom{
+.Tripcard__details > .price > .price__text{
+  margin-top: 2px;
+}
+
+.Tripcard__details > .price > .price__number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 1.2vw; */
+  font-size: 16.6px;
+  font-weight: 600;
+  padding-left: 8px;
+  color: #3a3a3a;
+}
+
+.price__number .ruppee{
+  font-size: 16.6px;
+}
+
+.Tripcard__details .time{
     font-size: 15px;
     font-weight: 600;
     line-height: 1.56;
