@@ -1,11 +1,18 @@
-h2{
+.footer__heading{
     font-size: 16px;
     cursor: pointer;
+    font-weight: 700;
+    color: #444;
 }
 
-span{
+.footer__list{
     font-weight: 300;
     cursor: pointer;
+    
+    @media screen and (max-width : 426px) {
+        font-size: 14px;
+    }
+    
 }
 
 .footer__item{
@@ -19,11 +26,11 @@ span{
     align-items: center;
 }
 
-.footer__item__top > h2{
+.footer__item__top > .footer__heading{
     flex : 0.8;
 }
 
-.footer__item__top > .button{
+.footer__item__top > .arrow__button{
     flex :0.2;
     justify-content: center;
     align-items: center;

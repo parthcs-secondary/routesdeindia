@@ -1,105 +1,80 @@
-
-
 .footer {
-    display: flex;
-    justify-content: center;
-    /* color: #fff; */
-    color: black;
-    /* background-color:#22383D; */
-    background-color:white;
-    padding : 50px 0;
+  display: flex;
+  justify-content: center;
+  color: #666;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px 0 40px;
 }
-
-h2{
-    font-size: 16px;
-    color:black;
-    /* color:white; */
-    cursor: pointer;
-}
-
-span{
-    font-weight: 300;
-    cursor: pointer;
-}
-
-.social > *{
-    cursor: pointer;
-} 
 
 .footer__container {
-    /* width: 1400px; */
-    width: 87.5%;
-}      
+  /* width: 1400px; */
+  width: 87.5%;
+}
 
 .footer__top {
-    display: flex;
-    justify-content: space-between;
-    gap:30px;
-}
-/* // this area is footer item  */
-/* // this area is footer item  */
-/* // this area is footer item  */
-/* // this area is footer item  */
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 
-hr {
-    margin: 50px 0px;
-    height: 0;
-    border: 1px solid #ebe9e9;
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 426px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+.footer__linebreak {
+  margin: 50px 0px;
+  height: 0;
+  border: 1px solid #ebe9e9;
 }
 
 .footer__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 580px) {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 .footer__left {
-    width: max-content;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  width: max-content;
+  display: flex;
+  align-items: center;
 }
 
-.footer__left > span{
-    font-size: 13px; 
+.footer__left__text {
+  font-size: 16px;
+  color: #444;
+  cursor: pointer;
+  font-weight: 700;
+
+  @media screen and (max-width: 426px) {
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 5px;
+  }
 }
 
+.social > .social__icons {
+  cursor: pointer;
+}
 
 .footer__right {
-    width: max-content;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}  
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
 
 .footer__right .social {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
-
-
-@media only screen and (max-width: 1000px) {
-    .footer__top {
-        flex-wrap: wrap;
-    }
-}
-
-@media only screen and (max-width: 426px) {
-    .footer__top {
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-    .footer__bottom{
-        flex-direction: column;
-        gap:12px;
-    }
-    .footer__bottom  h2{
-        font-size: 12px;
-        padding:0 5px;
-    }
-}
-
-.button{
-    cursor: pointer;
-}
-
