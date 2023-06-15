@@ -2,10 +2,13 @@ import React from "react";
 import "./Banner01.css";
 function Banner01() {
   return (
+    // wrapped with a purpose(handle browser zoom in and out pixelling). do not remove
+    <div className="banner_wrap">
 
-    // main banner 
+    {/* // main banner  */}
     <div className="Banner01">
 
+  
     {/* banner title  */}
       <div className="banner01_title"><span>Find your Perfect  <span id="Escape_word"> Escape</span></span>
       </div>
@@ -51,6 +54,7 @@ function Banner01() {
           alt=""
         />
       </div>
+    </div>
     </div>
   );
 }

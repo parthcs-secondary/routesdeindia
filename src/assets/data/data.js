@@ -153,6 +153,7 @@ export const trips = [
     desc: "Customize your site",
     img: "https://images.pexels.com/photos/4371669/pexels-photo-4371669.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
+  
   {
     id: 4,
     title: "Kasol kheerganga",
@@ -161,19 +162,19 @@ export const trips = [
   },
   {
     id: 5,
-    title:  "Beautiful Places to Visit in Spring in India",
+    title:  "Beautiful Places to visit in india ",
     desc: "Engage your audience",
     img: "https://images.pexels.com/photos/13388047/pexels-photo-13388047.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
     id: 6,
-    title: "Workcations: The New Trend of Travel",
+    title: "Workcations: The New ",
     desc: "Reach more customers",
     img: "https://images.pexels.com/photos/11378899/pexels-photo-11378899.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
     id: 7,
-    title:"Mesmerising Waterfalls of Meghalaya to Visit",
+    title:"Mesmerising Waterfalls of Meghalaya ",
     desc: "Unlock growth online",
     img: "https://images.pexels.com/photos/4820241/pexels-photo-4820241.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },

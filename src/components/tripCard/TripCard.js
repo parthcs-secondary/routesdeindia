@@ -1,26 +1,28 @@
 import React from "react";
 import "./TripCard.css";
-import { MdOutlineLocationOn } from "react-icons/md";
-import { BsClock } from "react-icons/bs";
+import { BsStarFill } from "react-icons/bs";
 
-function TripCard( {card} ) {
-  // console.log(trip);
+function TripCard({ card }) {
   return (
     <div className="TripCard">
-      <img className="photo" src={card?.img} alt="" />
-      <div className="info">
-          <div className="time">
-           <BsClock/>
-           <span>5N-6D</span>
-           </div>
-          <div className="place">
-          <MdOutlineLocationOn/>
-           <span>Leh</span>
-           </div>
+      <div className="TripCard__image">
+        <img className="photo" src={card?.img} alt="" />
       </div>
-      <h3 className="title">{card.title}</h3>
-      <div className="price">
-        <p>Starts at  <span>$21,999/-</span></p>
+
+      <div className="TripCard__info">
+        <div className="title">{card.title}</div>
+        <div className="rating">
+          <span>
+            <BsStarFill className="star"/> 4.8
+          </span>
+        </div>
+
+        <div className="price">
+          <div className="price__top">
+            <p>Starts at $ 21000.00</p>
+          </div>
+          <div className="price__bottom"> 17 jun</div>
+        </div>
       </div>
     </div>
   );

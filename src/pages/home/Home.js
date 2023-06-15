@@ -11,12 +11,16 @@ function Home() {
   return (
     <div className="Home">
       <Banner />
-      <Banner01/>
+      <Banner01 />
+      
       {/* upcoming trips  */}
+
       <div className="tours">
-        <Slide heading={"Upcoming Trips"} flag={"trip"}>
+        <Slide heading={"Upcoming Trips"}>
           {trips.map((card) => (
-            <TripCard key={card.id} card={card} />
+            <div className="trip__card">
+              <TripCard key={card.id} card={card} />
+            </div>
           ))}
         </Slide>
       </div>
