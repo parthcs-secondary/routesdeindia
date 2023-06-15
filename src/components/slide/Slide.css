@@ -39,15 +39,10 @@
 
 .slide__cards {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
   gap: 25px;
   padding: 5px 9.5px;
-  justify-content: center;
-
-  @media screen and (max-width: 426px) {
-    justify-content: flex-start;
-  }
 }
 
 .slide__cards::-webkit-scrollbar {
